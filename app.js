@@ -69,8 +69,8 @@ showMovie = async (index) => {
       document.getElementById("movie-modal-content").innerHTML =
         `<h3>${movies[index].title}</h3>` +
         MovieChar.map((item) => `<p>${item.name}</p>`)
-          .join("")
-          .sort();
+          .sort()
+          .join("");
     }
   } catch (error) {
     document.getElementById("movie-modal").innerHTML =
